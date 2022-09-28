@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  app:
+    container_name: jinkai-nitamago-netlify
+    image: node:18-bullseye-slim
+    working_dir: /opt/app
+    tty: true
+    ports:
+      - 8888:8888
+    volumes:
+      - ./:/opt/app
